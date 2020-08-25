@@ -6,13 +6,13 @@
 /*   By: ksalmi <ksalmi@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 15:49:04 by ksalmi            #+#    #+#             */
-/*   Updated: 2019/11/24 16:21:15 by ksalmi           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:17:03 by ksalmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	check_newlines(char **s, char **line, int fd)
+static int	check_newlines(char **s, char **line, int fd)
 {
 	char	*temp;
 	char	*found;
@@ -36,7 +36,7 @@ int	check_newlines(char **s, char **line, int fd)
 	return (0);
 }
 
-int	get_next_line(const int fd, char **line)
+int			get_next_line(const int fd, char **line)
 {
 	static char	*s[MAX_FD];
 	char		*whole_line;

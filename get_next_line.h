@@ -6,7 +6,7 @@
 /*   By: ksalmi <ksalmi@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/12 16:22:50 by ksalmi            #+#    #+#             */
-/*   Updated: 2019/11/24 16:01:03 by ksalmi           ###   ########.fr       */
+/*   Updated: 2019/12/04 12:05:07 by ksalmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <unistd.h>
 # include "libft.h"
 
-# define BUFF_SIZE 15
+# define BUFF_SIZE 50000
 # define MAX_FD 4864
 
 int		get_next_line(const int fd, char **line);
