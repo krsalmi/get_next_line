@@ -6,7 +6,7 @@
 #    By: ksalmi <ksalmi@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/25 18:00:22 by ksalmi            #+#    #+#              #
-#    Updated: 2019/12/04 12:06:40 by ksalmi           ###   ########.fr        #
+#    Updated: 2020/12/09 22:50:22 by ksalmi           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,4 +23,7 @@ $(NAME):
 	gcc -o $(NAME) main.o get_next_line.o -I libft/includes -L libft/ -lft
 
 clean:
-	rm -f main.o get_next_line.o test_gnl
+	rm -f main.o get_next_line.o
+
+fclean: clean
+	rm -rf $(NAME)
