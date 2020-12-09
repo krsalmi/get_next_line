@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fucking_hell_get_next.c                            :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ksalmi <ksalmi@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 15:49:04 by ksalmi            #+#    #+#             */
-/*   Updated: 2019/11/25 19:17:03 by ksalmi           ###   ########.fr       */
+/*   Updated: 2020/12/09 23:13:58 by ksalmi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static int	check_newlines(char **s, char **line, int fd)
+int	check_newlines(char **s, char **line, int fd)
 {
 	char	*temp;
 	char	*found;
@@ -36,7 +36,7 @@ static int	check_newlines(char **s, char **line, int fd)
 	return (0);
 }
 
-int			get_next_line(const int fd, char **line)
+int	get_next_line(const int fd, char **line)
 {
 	static char	*s[MAX_FD];
 	char		*whole_line;
